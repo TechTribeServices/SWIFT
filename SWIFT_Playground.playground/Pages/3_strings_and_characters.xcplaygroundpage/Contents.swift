@@ -47,4 +47,10 @@ for index in greeting.indices {
 
 // inserting & removing
 var welcome: String = "hello"
-welcome.insert("!", at: welcome.endIndex)
+welcome.insert("!", at: welcome.endIndex) // add a single character
+
+welcome.insert(contentsOf: " there", at: welcome.index(before: welcome.endIndex)) // add a content of another string
+
+welcome.remove(at: welcome.index(before: welcome.endIndex)) // remove a single character
+let range = welcome.index(welcome.endIndex, offsetBy: -6)..<welcome.endIndex
+welcome.removeSubrange(range)
