@@ -46,4 +46,5 @@ for index in greeting.indices {
 }
 
 // inserting & removing
-
+var welcome: String = "hello"
+welcome.insert("!", at: welcome.endIndex)
