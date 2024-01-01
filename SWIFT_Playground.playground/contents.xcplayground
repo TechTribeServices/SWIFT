@@ -4,5 +4,6 @@
         <page name='2_basic_operations'/>
         <page name='3_strings_and_characters'/>
         <page name='Untitled Page'/>
+        <page name='4_collection_types'/>
     </pages>
 </playground>
