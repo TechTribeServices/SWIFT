@@ -92,3 +92,63 @@ if hasDoorKey || knowsOverridePassword {
 } else {
     print("ACCESS DEINIED")
 }
+
+// switch statement
+let someCharacter: Character = "z"
+switch someCharacter {
+case "a":
+    print("The first letter of the Latin alphabet")
+case "z":
+    print("The last letter of the Latin alphabet")
+default:
+    print("Some other character")
+}
+
+
+let anotherCharacter: Character = "a"
+let message = switch anotherCharacter {
+case "a":
+    "The first letter of the Latin alphabet"
+case "z":
+    "The last letter of the Latin alphabet"
+default:
+    "Some other character"
+}
+
+
+print(message)
+
+// using tuples to test multiple values in same switch statement
+let somePoint = (1, 1)
+switch somePoint {
+case (0, 0):
+    print("\(somePoint) is at the origin")
+case (_, 0):
+    print("\(somePoint) is on the x-axis")
+case (0, _):
+    print("\(somePoint) is on the y-axis")
+case (-2...2, -2...2):
+    print("\(somePoint) is inside the box")
+default:
+    print("\(somePoint) is outside of the box")
+}
+
+// continue
+let puzzleInput: String = "great minds think alike"
+var puzzleOut: String = ""
+let charactersToRemove: [Character] = ["a", "e", "i", "o", "u", " "]
+for character in puzzleInput {
+    if charactersToRemove.contains(character) {
+        continue
+    }
+    puzzleOut.append(character)
+}
+print(puzzleOut)
+
+// checking API availability
+if #available(iOS 10, macOS 10.12, *) {
+    print("available")
+} else {
+    print("not available")
+}
+
