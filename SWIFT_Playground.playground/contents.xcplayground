@@ -6,5 +6,6 @@
         <page name='Untitled Page'/>
         <page name='4_collection_types'/>
         <page name='5_control_flow'/>
+        <page name='6_functions'/>
     </pages>
 </playground>
